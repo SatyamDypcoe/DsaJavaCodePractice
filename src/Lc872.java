@@ -4,7 +4,7 @@ public class Lc872 {
     public static void main(String[] args) {
 
     }
-    public boolean leafSimilar(TreeNode root1, TreeNode root2) {
+    public static boolean leafSimilar(TreeNode root1, TreeNode root2) {
         StringBuilder s1 = new StringBuilder();
         StringBuilder s2 = new StringBuilder();
 
@@ -16,7 +16,7 @@ public class Lc872 {
         }
         return false;
     }
-    private void checkLeaf(TreeNode root, StringBuilder s){
+    private static void checkLeaf(TreeNode root, StringBuilder s){
         if(root == null){
             return;
         }
