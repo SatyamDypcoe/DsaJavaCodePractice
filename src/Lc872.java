@@ -2,8 +2,34 @@ import javax.swing.tree.TreeNode;
 
 public class Lc872 {
     public static void main(String[] args) {
+        BinarySearchTree root1 = new BinarySearchTree();
 
+        // Inserting nodes
+        tree.root = tree.insert(tree.root, 50);
+        tree.insert(tree.root, 30);
+        tree.insert(tree.root, 20);
+        tree.insert(tree.root, 40);
+        tree.insert(tree.root, 70);
+        tree.insert(tree.root, 60);
+        tree.insert(tree.root, 80);
     }
+    class Node {
+        int key;
+        Node left, right;
+
+        public Node(int item) {
+            key = item;
+            left = right = null;
+        }
+    }
+
+    class BinarySearchTree {
+        Node root;
+
+        // Constructor
+        BinarySearchTree() {
+            root = null;
+        }
     public static boolean leafSimilar(TreeNode root1, TreeNode root2) {
         StringBuilder s1 = new StringBuilder();
         StringBuilder s2 = new StringBuilder();
